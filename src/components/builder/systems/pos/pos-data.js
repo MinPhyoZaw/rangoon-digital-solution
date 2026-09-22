@@ -31,7 +31,7 @@ import {
 export const config = {
   title: "POS System",
   subtitle: "For shops, retail and service businesses",
-  basePrice: 500000,
+  basePrice: 1500000,
   icon: Store,
 };
 
@@ -39,7 +39,6 @@ export const basicFeatures = [
   "POS / Checkout",
   "Product Management",
   "Categories",
-  "Barcode / SKU",
   "Cost Price + Selling Price",
   "Basic Inventory",
   "Automatic stock deduction",
@@ -65,22 +64,20 @@ export const addons = [
     title: "Customer Management",
     description:
       "Customer profiles, phone numbers, purchase history and notes.",
-    price: 60000,
+    price: 120000,
   },
   {
     id: "loyalty",
     icon: Star,
     title: "Loyalty / Points",
-    description:
-      "Reward points, membership levels and redeem points.",
-    price: 70000,
+    description: "Reward points, membership levels and redeem points.",
+    price: 200000,
   },
   {
     id: "credit-debt",
     icon: CreditCard,
     title: "Credit / Debt Management",
-    description:
-      "Customer debt, partial payments and outstanding balances.",
+    description: "Customer debt, partial payments and outstanding balances.",
     price: 80000,
   },
   {
@@ -95,16 +92,14 @@ export const addons = [
     id: "supplier-management",
     icon: Truck,
     title: "Supplier Management",
-    description:
-      "Supplier profiles, contact details and purchase history.",
-    price: 70000,
+    description: "Supplier profiles, contact details and purchase history.",
+    price: 170000,
   },
   {
     id: "purchase-management",
     icon: ClipboardList,
     title: "Purchase Management",
-    description:
-      "Purchase orders, stock purchases and cost records.",
+    description: "Purchase orders, stock purchases and cost records.",
     price: 80000,
   },
   {
@@ -119,152 +114,127 @@ export const addons = [
     id: "employee-management",
     icon: UserCog,
     title: "Employee Management",
-    description:
-      "Multiple employees, roles and detailed permissions.",
+    description: "Multiple employees, roles and detailed permissions.",
     price: 80000,
   },
   {
     id: "staff-attendance",
     icon: Clock3,
     title: "Staff Attendance",
-    description:
-      "Clock-in/out and attendance history.",
-    price: 60000,
+    description: "Clock-in/out and attendance history.",
+    price: 160000,
   },
   {
     id: "multi-branch",
     icon: Building2,
     title: "Multi-Branch",
-    description:
-      "Manage multiple shops or branches from one system.",
-    price: 150000,
+    description: "Manage multiple shops or branches from one system.",
+    price: 300000,
   },
   {
     id: "warehouse",
     icon: Warehouse,
     title: "Warehouse",
-    description:
-      "Separate warehouse stock and branch transfers.",
+    description: "Separate warehouse stock and branch transfers.",
     price: 120000,
   },
   {
     id: "cloud-sync",
     icon: Cloud,
     title: "Cloud Sync",
-    description:
-      "Synchronize POS data securely to the cloud.",
+    description: "Synchronize POS data securely to the cloud.",
     price: 100000,
   },
   {
     id: "owner-mobile-dashboard",
     icon: Smartphone,
     title: "Owner Mobile Dashboard",
-    description:
-      "View sales, stock and reports from a mobile device.",
-    price: 120000,
+    description: "View sales, stock and reports from a mobile device.",
+    price: 300000,
   },
   {
     id: "remote-notifications",
     icon: Bell,
     title: "Remote Notifications",
-    description:
-      "Low-stock, high-sales and important remote alerts.",
+    description: "Low-stock, high-sales and important remote alerts.",
     price: 60000,
   },
   {
     id: "advanced-payment-methods",
     icon: WalletCards,
     title: "Advanced Payment Methods",
-    description:
-      "KBZPay, WavePay, bank transfer and payment tracking.",
+    description: "KBZPay, WavePay, bank transfer and payment tracking.",
     price: 70000,
   },
   {
     id: "promotion-system",
     icon: Tags,
     title: "Promotion System",
-    description:
-      "Buy 1 Get 1, percentage promotions and scheduled discounts.",
-    price: 70000,
+    description: "Buy 1 Get 1, percentage promotions and scheduled discounts.",
+    price: 170000,
   },
   {
     id: "coupon-voucher",
     icon: TicketPercent,
     title: "Coupon / Voucher",
-    description:
-      "Coupon codes, gift vouchers and redemption tracking.",
-    price: 60000,
+    description: "Coupon codes, gift vouchers and redemption tracking.",
+    price: 160000,
   },
   {
     id: "returns-refunds",
     icon: RotateCcw,
     title: "Returns & Refunds",
-    description:
-      "Product returns, refunds and exchange records.",
-    price: 65000,
+    description: "Product returns, refunds and exchange records.",
+    price: 160000,
   },
   {
     id: "product-variants",
     icon: SlidersHorizontal,
     title: "Product Variants",
-    description:
-      "Size, color, model and other product variations.",
+    description: "Size, color, model and other product variations.",
     price: 70000,
   },
   {
     id: "expiry-tracking",
     icon: CalendarClock,
     title: "Expiry Tracking",
-    description:
-      "Expiry dates and near-expiry warnings.",
+    description: "Expiry dates and near-expiry warnings.",
     price: 65000,
   },
-  {
-    id: "batch-lot-tracking",
-    icon: ScanBarcode,
-    title: "Batch / Lot Tracking",
-    description:
-      "Batch number and lot tracking for products.",
-    price: 70000,
-  },
+
   {
     id: "business-dashboard",
     icon: LayoutDashboard,
     title: "Business Dashboard",
-    description:
-      "Detailed charts and business KPIs.",
-    price: 90000,
+    description: "Detailed charts and business KPIs.",
+    price: 190000,
   },
   {
     id: "excel-export",
     icon: FileSpreadsheet,
     title: "Excel Export",
-    description:
-      "Export sales, inventory and report data.",
+    description: "Export sales, inventory and report data.",
     price: 40000,
   },
   {
     id: "custom-receipt",
     icon: ReceiptText,
     title: "Custom Receipt",
-    description:
-      "Custom receipt layout, logo and footer.",
+    description: "Custom receipt layout, logo and footer.",
     price: 40000,
   },
   {
     id: "ecommerce-integration",
     icon: ShoppingCart,
     title: "E-commerce Integration",
-    description:
-      "Connect POS stock and orders with an online shop.",
-    price: 180000,
+    description: "Connect POS stock and orders with an online shop.",
+    price: 200000,
   },
   {
     id: "online-ordering",
     icon: ShoppingBag,
     title: "Online Ordering",
-    description:
-      "Customer online ordering connected directly to the POS.",
+    description: "Customer online ordering connected directly to the POS.",
     price: 160000,
   },
 ];

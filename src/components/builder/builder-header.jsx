@@ -10,7 +10,8 @@ export function BuilderHeader() {
             className="inline-flex items-center gap-2 text-sm text-neutral-500"
           >
             <ArrowLeft size={17} />
-            Back to Alita
+            Back to{" "}
+            <span className="text-blue-600">Rangoon Digital Solution</span>
           </Link>
           <div className="flex items-center gap-2 text-right">
             <Sparkles size={17} className="shrink-0 text-blue-600" />

@@ -55,7 +55,7 @@ export function PriceSummary({ title, basePrice, selectedAddons, onRemove }) {
           total={total}
         />
         <Link
-          href="/#contact"
+          href="/?scroll=contact-form"
           className="inline-flex items-center justify-center rounded-xl border px-5 py-3.5 text-sm font-semibold"
         >
           Discuss First

@@ -270,7 +270,7 @@ function HeroSection() {
               size="lg"
               className="bg-white px-7 text-neutral-950 hover:bg-white/90"
             >
-              <Link href="/#contact">
+              <Link href="/?scroll=contact-form">
                 Get a POS solution
                 <ArrowRight size={18} />
               </Link>

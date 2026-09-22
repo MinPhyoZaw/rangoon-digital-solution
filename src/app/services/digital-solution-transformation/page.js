@@ -221,27 +221,47 @@ function HeroSection() {
     <section className="relative isolate flex min-h-screen items-center overflow-hidden bg-neutral-950 text-white">
       <Navbar />
 
-      <div className="absolute inset-0">
-        <div className="absolute -left-32 top-1/4 h-[420px] w-[420px] rounded-full bg-blue-600/20 blur-[120px]" />
-        <div className="absolute right-0 top-0 h-[520px] w-[520px] rounded-full bg-violet-600/15 blur-[140px]" />
+      {/* Banner image */}
+      <div className="absolute inset-0 -z-30">
+        <Image
+          src="/images/tsd.png"
+          alt="Digital transformation technology banner"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-[70%_center] sm:object-center"
+        />
       </div>
 
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.035)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.035)_1px,transparent_1px)] bg-[size:72px_72px]" />
+      {/* Dark overlay for text readability */}
+      <div className="absolute inset-0 -z-20 bg-gradient-to-r from-neutral-950/95 via-neutral-950/75 to-neutral-950/10" />
 
-      <div className="absolute inset-0 bg-gradient-to-r from-neutral-950 via-neutral-950/85 to-neutral-950/60" />
+      {/* Additional top and bottom shading */}
+      <div className="absolute inset-0 -z-20 bg-gradient-to-b from-neutral-950/35 via-transparent to-neutral-950/75" />
 
-      <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-7xl items-center px-5 pb-16 pt-28 lg:px-8">
+      {/* Background glow */}
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute -left-32 top-1/4 h-[420px] w-[420px] rounded-full bg-blue-600/15 blur-[120px]" />
+
+        <div className="absolute right-0 top-0 h-[520px] w-[520px] rounded-full bg-violet-600/10 blur-[140px]" />
+      </div>
+
+      {/* Subtle grid */}
+      <div className="absolute inset-0 -z-10 bg-[linear-gradient(rgba(255,255,255,0.025)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.025)_1px,transparent_1px)] bg-[size:72px_72px]" />
+
+      {/* Hero content */}
+      <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-7xl items-center px-5 pb-16 pt-32 lg:px-8">
         <div className="max-w-4xl">
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-400">
-            Alita Software House
+            Rangoon Digital Solution
           </p>
 
           <h1 className="mt-6 text-5xl font-black leading-[0.98] tracking-[-0.055em] sm:text-7xl lg:text-8xl">
             Digital Solution
-            <span className="block text-white/45">Transformation</span>
+            <span className="block text-white/55">Transformation</span>
           </h1>
 
-          <p className="mt-8 max-w-2xl text-lg leading-8 text-white/70 sm:text-xl">
+          <p className="mt-8 max-w-2xl text-lg leading-8 text-white/75 sm:text-xl">
             We help businesses replace manual processes, disconnected tools, and
             outdated workflows with modern digital systems built around the way
             they actually operate.
@@ -253,7 +273,7 @@ function HeroSection() {
               size="lg"
               className="bg-white px-7 text-neutral-950 hover:bg-white/90"
             >
-              <Link href="/#contact">
+              <Link href="/?scroll=contact-form">
                 Start your transformation
                 <ArrowRight size={18} />
               </Link>

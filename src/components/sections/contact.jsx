@@ -1,6 +1,29 @@
-import { Mail, MessageSquareQuote } from "lucide-react";
+"use client";
+
+import { useEffect } from "react";
+import { MessageSquareQuote } from "lucide-react";
 import { ContactForm } from "./contact-form";
+
 export function Contact() {
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+
+    if (params.get("scroll") !== "contact-form") {
+      return;
+    }
+
+    const timer = window.setTimeout(() => {
+      const form = document.getElementById("contact-form");
+
+      form?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }, 300);
+
+    return () => window.clearTimeout(timer);
+  }, []);
+
   return (
     <section
       id="contact"
@@ -11,19 +34,20 @@ export function Contact() {
           <div className="mb-6 flex size-12 items-center justify-center rounded-2xl bg-white/15">
             <MessageSquareQuote />
           </div>
+
           <h2 className="text-3xl font-black tracking-tight sm:text-5xl">
             Have a project in mind?
           </h2>
+
           <p className="mt-5 max-w-lg text-base leading-7 opacity-80 sm:mt-6 sm:text-lg sm:leading-8">
             Tell us what you need. This starter sends quotation requests through
             a lightweight Next.js API route using Resend—no database required.
           </p>
-          <div className="mt-7 flex items-start gap-3 text-sm sm:items-center sm:text-base">
-            <Mail size={18} />
-            <span>Configure your business email in .env.local</span>
-          </div>
         </div>
-        <ContactForm />
+
+        <div id="contact-form" className="scroll-mt-24">
+          <ContactForm />
+        </div>
       </div>
     </section>
   );

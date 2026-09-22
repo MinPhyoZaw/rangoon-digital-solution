@@ -39,7 +39,7 @@ import {
 export const config = {
   title: "E-commerce",
   subtitle: "For businesses that want to sell products online",
-  basePrice: 650000,
+  basePrice: 3500000,
   icon: ShoppingCart,
 };
 
@@ -78,15 +78,14 @@ export const addons = [
     title: "Online Payment Integration",
     description:
       "Connect KBZPay, WavePay, bank transfer or supported payment gateways.",
-    price: 90000,
+    price: 650000,
   },
   {
     id: "reviews",
     icon: Star,
     title: "Product Reviews & Ratings",
-    description:
-      "Allow customers to rate products and leave reviews.",
-    price: 60000,
+    description: "Allow customers to rate products and leave reviews.",
+    price: 200000,
   },
   {
     id: "coupon",
@@ -94,7 +93,7 @@ export const addons = [
     title: "Coupon / Voucher System",
     description:
       "Coupon codes, percentage discounts, fixed discounts and vouchers.",
-    price: 70000,
+    price: 300000,
   },
   {
     id: "advanced-delivery",
@@ -102,7 +101,7 @@ export const addons = [
     title: "Advanced Delivery Management",
     description:
       "Delivery zones, shipping fees, delivery status and shipping rules.",
-    price: 90000,
+    price: 500000,
   },
   {
     id: "address-management",
@@ -110,7 +109,7 @@ export const addons = [
     title: "Address Management",
     description:
       "Allow customers to save and manage multiple delivery addresses.",
-    price: 50000,
+    price: 180000,
   },
   {
     id: "advanced-inventory",
@@ -118,7 +117,7 @@ export const addons = [
     title: "Advanced Inventory",
     description:
       "Stock movements, adjustments, damaged stock and inventory history.",
-    price: 90000,
+    price: 700000,
   },
   {
     id: "product-variants",
@@ -126,15 +125,14 @@ export const addons = [
     title: "Product Variants",
     description:
       "Support size, color, model, weight and other product options.",
-    price: 70000,
+    price: 350000,
   },
   {
     id: "sku-barcode",
     icon: ScanBarcode,
     title: "SKU / Barcode Management",
-    description:
-      "Manage SKU and barcode codes for products and variants.",
-    price: 60000,
+    description: "Manage SKU and barcode codes for products and variants.",
+    price: 300000,
   },
   {
     id: "customer-management",
@@ -142,15 +140,14 @@ export const addons = [
     title: "Customer Management / CRM",
     description:
       "Customer profiles, purchase history, notes and customer segments.",
-    price: 70000,
+    price: 500000,
   },
   {
     id: "loyalty",
     icon: BadgePercent,
     title: "Loyalty / Points",
-    description:
-      "Reward points, membership levels and redeemable points.",
-    price: 80000,
+    description: "Reward points, membership levels and redeemable points.",
+    price: 500000,
   },
   {
     id: "notifications",
@@ -158,15 +155,14 @@ export const addons = [
     title: "Order Notifications",
     description:
       "Send order confirmation and status notifications through email, Telegram or app.",
-    price: 60000,
+    price: 300000,
   },
   {
     id: "email-marketing",
     icon: Mail,
     title: "Email Marketing",
-    description:
-      "Promotional emails, newsletters and customer campaigns.",
-    price: 80000,
+    description: "Promotional emails, newsletters and customer campaigns.",
+    price: 400000,
   },
   {
     id: "mobile-app",
@@ -174,7 +170,7 @@ export const addons = [
     title: "Customer Mobile App",
     description:
       "Android or iOS shopping application connected to the e-commerce system.",
-    price: 350000,
+    price: 3000000,
   },
   {
     id: "multi-vendor",
@@ -182,7 +178,7 @@ export const addons = [
     title: "Multi-Vendor Marketplace",
     description:
       "Allow multiple vendors to manage their products, orders and store information.",
-    price: 300000,
+    price: 3000000,
   },
   {
     id: "multi-warehouse",
@@ -190,7 +186,7 @@ export const addons = [
     title: "Multi-Warehouse",
     description:
       "Manage inventory across multiple warehouses or stock locations.",
-    price: 150000,
+    price: 1000000,
   },
   {
     id: "purchase-management",
@@ -198,15 +194,14 @@ export const addons = [
     title: "Purchase Management",
     description:
       "Purchase orders, incoming stock and supplier purchase records.",
-    price: 90000,
+    price: 600000,
   },
   {
     id: "returns-refunds",
     icon: RotateCcw,
     title: "Returns & Refunds",
-    description:
-      "Customer return requests, refunds and product exchanges.",
-    price: 70000,
+    description: "Customer return requests, refunds and product exchanges.",
+    price: 350000,
   },
   {
     id: "advanced-reports",
@@ -214,7 +209,7 @@ export const addons = [
     title: "Advanced Reports",
     description:
       "Sales comparison, product profit, category performance and stock valuation.",
-    price: 90000,
+    price: 600000,
   },
   {
     id: "analytics-dashboard",
@@ -222,7 +217,7 @@ export const addons = [
     title: "Business Analytics Dashboard",
     description:
       "Revenue charts, average order value, conversion metrics and business KPIs.",
-    price: 100000,
+    price: 700000,
   },
   {
     id: "advanced-search",
@@ -230,7 +225,7 @@ export const addons = [
     title: "Advanced Search & Filters",
     description:
       "Filter by price, brand, size, color, rating, availability and other attributes.",
-    price: 70000,
+    price: 350000,
   },
   {
     id: "recommendations",
@@ -238,39 +233,35 @@ export const addons = [
     title: "Product Recommendations",
     description:
       "Related products, similar products and frequently bought together suggestions.",
-    price: 100000,
+    price: 500000,
   },
   {
     id: "excel-export",
     icon: FileSpreadsheet,
     title: "Excel Export",
-    description:
-      "Export products, orders, customers, inventory and reports.",
-    price: 40000,
+    description: "Export products, orders, customers, inventory and reports.",
+    price: 150000,
   },
   {
     id: "invoice",
     icon: ReceiptText,
     title: "Invoice Generation",
-    description:
-      "Generate branded invoices and downloadable PDF invoices.",
-    price: 50000,
+    description: "Generate branded invoices and downloadable PDF invoices.",
+    price: 200000,
   },
   {
     id: "multi-language",
     icon: Languages,
     title: "Multi-language",
-    description:
-      "Support Burmese, English and additional website languages.",
-    price: 90000,
+    description: "Support Burmese, English and additional website languages.",
+    price: 450000,
   },
   {
     id: "multi-currency",
     icon: CircleDollarSign,
     title: "Multi-Currency",
-    description:
-      "Display and manage product prices in multiple currencies.",
-    price: 80000,
+    description: "Display and manage product prices in multiple currencies.",
+    price: 400000,
   },
   {
     id: "social-login",
@@ -278,7 +269,7 @@ export const addons = [
     title: "Social Login",
     description:
       "Allow customers to sign in using Google, Facebook or supported providers.",
-    price: 60000,
+    price: 250000,
   },
   {
     id: "live-chat",
@@ -286,7 +277,7 @@ export const addons = [
     title: "Live Chat / Messenger",
     description:
       "Integrate customer support chat, Messenger or other chat services.",
-    price: 60000,
+    price: 150000,
   },
   {
     id: "order-tracking",
@@ -294,7 +285,7 @@ export const addons = [
     title: "Order Tracking",
     description:
       "Allow customers to view their current order and delivery status.",
-    price: 70000,
+    price: 300000,
   },
   {
     id: "pre-order",
@@ -302,15 +293,14 @@ export const addons = [
     title: "Pre-order System",
     description:
       "Allow customers to order upcoming or currently unavailable products.",
-    price: 70000,
+    price: 300000,
   },
   {
     id: "scheduled-release",
     icon: CalendarClock,
     title: "Scheduled Product Release",
-    description:
-      "Automatically publish products at a selected date and time.",
-    price: 50000,
+    description: "Automatically publish products at a selected date and time.",
+    price: 180000,
   },
   {
     id: "staff-permissions",
@@ -318,7 +308,7 @@ export const addons = [
     title: "Staff Roles & Permissions",
     description:
       "Separate permissions for admin, sales, inventory and customer service staff.",
-    price: 80000,
+    price: 450000,
   },
   {
     id: "promotion-system",
@@ -326,23 +316,21 @@ export const addons = [
     title: "Advanced Promotion System",
     description:
       "Flash sales, Buy 1 Get 1, campaign pricing and scheduled discounts.",
-    price: 90000,
+    price: 550000,
   },
   {
     id: "brand-management",
     icon: Tags,
     title: "Brand Management",
-    description:
-      "Create brands, brand pages and filter products by brand.",
-    price: 50000,
+    description: "Create brands, brand pages and filter products by brand.",
+    price: 180000,
   },
   {
     id: "bulk-upload",
     icon: Upload,
     title: "Bulk Product Upload",
-    description:
-      "Upload large product lists using Excel or CSV files.",
-    price: 70000,
+    description: "Upload large product lists using Excel or CSV files.",
+    price: 350000,
   },
   {
     id: "pos-integration",
@@ -350,6 +338,6 @@ export const addons = [
     title: "POS Integration",
     description:
       "Synchronize online orders and inventory with a physical POS system.",
-    price: 180000,
+    price: 1500000,
   },
 ];

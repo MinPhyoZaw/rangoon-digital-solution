@@ -84,7 +84,7 @@ export function IndustryPage({
                 size="lg"
                 className="bg-white px-7 text-neutral-950 hover:bg-white/90"
               >
-                <Link href={ctaHref}>
+                <Link href="/?scroll=contact-form">
                   Book a strategy call
                   <ArrowRight size={18} />
                 </Link>
