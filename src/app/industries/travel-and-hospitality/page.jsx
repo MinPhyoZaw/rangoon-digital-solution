@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { Navbar } from "@/components/layout/navbar";
 
 export const metadata = {
@@ -111,24 +113,26 @@ export default function TravelAndHospitalityPage() {
     <main className="bg-white">
       <Navbar />
 
-      {/* HERO */}
+      {/* Hero */}
       <section className="relative isolate min-h-screen overflow-hidden bg-neutral-950">
-        {/* Video */}
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="absolute inset-0 z-0 h-full w-full object-cover"
-        >
-          <source src="/video/hotel.mp4" type="video/mp4" />
-        </video>
+        {/* Background image */}
+        <Image
+          src="/images/handt.jpg"
+          alt="Luxury hotel and travel experience"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center"
+        />
 
         {/* Dark overlay */}
         <div className="absolute inset-0 z-10 bg-black/40" />
 
-        {/* Gradient */}
-        <div className="absolute inset-0 z-10 bg-gradient-to-r from-black/80 via-black/40 to-transparent" />
+        {/* Gradient overlay */}
+        <div className="absolute inset-0 z-10 bg-gradient-to-r from-black/85 via-black/50 to-black/10" />
+
+        {/* Subtle bottom gradient */}
+        <div className="absolute inset-x-0 bottom-0 z-10 h-48 bg-gradient-to-t from-neutral-950/70 to-transparent" />
 
         {/* Hero content */}
         <div className="relative z-20 mx-auto flex min-h-screen max-w-7xl items-center px-5 pt-[88px] lg:px-8">
@@ -150,14 +154,14 @@ export default function TravelAndHospitalityPage() {
         </div>
       </section>
 
-      {/* INTRO */}
+      {/* Introduction */}
       <section className="py-24">
         <div className="mx-auto grid max-w-7xl gap-14 px-5 lg:grid-cols-2 lg:items-center lg:px-8">
-          <div className="overflow-hidden rounded-3xl">
+          <div className="relative min-h-[400px] overflow-hidden rounded-3xl sm:min-h-[500px]">
             <img
               src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=85"
               alt="Hotel and hospitality"
-              className="h-[500px] w-full object-cover"
+              className="absolute inset-0 h-full w-full object-cover"
             />
           </div>
 
@@ -184,10 +188,10 @@ export default function TravelAndHospitalityPage() {
         </div>
       </section>
 
-      {/* TRAVEL SOLUTIONS */}
+      {/* Travel solutions */}
       <TravelSolutionsSection />
 
-      {/* HIGHLIGHTS */}
+      {/* Highlights */}
       <section className="py-24">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr]">
