@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 import {
   ArrowRight,
@@ -43,28 +44,27 @@ export function IndustryPage({
       <Navbar />
 
       {/* HERO */}
-      <section className="relative min-h-screen overflow-hidden bg-neutral-950 text-white">
+      <section className="relative isolate min-h-[100svh] w-full overflow-hidden bg-neutral-950 text-white md:min-h-screen">
         {/* Background image */}
-        <div
-          className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: `
-              linear-gradient(
-                90deg,
-                rgba(0,0,0,0.72) 0%,
-                rgba(0,0,0,0.45) 42%,
-                rgba(0,0,0,0.28) 100%
-              ),
-              url("${image}")
-            `,
-          }}
-        />
+        <div className="absolute inset-0 h-full w-full">
+          <Image
+            src={image}
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center"
+          />
+        </div>
+
+        {/* Directional overlay */}
+        <div className="absolute inset-0 z-10 bg-gradient-to-r from-black/75 via-black/45 to-black/30" />
 
         {/* Radial overlay */}
         <div className="absolute inset-0 z-10 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(0,0,0,0.15)_55%,rgba(0,0,0,0.45)_100%)]" />
 
         {/* Hero Content */}
-        <div className="relative z-20 mx-auto flex min-h-screen w-full max-w-7xl items-center px-5 pb-16 pt-[110px] lg:px-8">
+        <div className="relative z-20 mx-auto flex min-h-[100svh] w-full max-w-7xl items-center px-5 pb-16 pt-[110px] md:min-h-screen lg:px-8">
           <div className="max-w-2xl">
             <p className="mb-5 text-sm font-semibold uppercase tracking-[0.32em] text-white/75">
               {eyebrow}

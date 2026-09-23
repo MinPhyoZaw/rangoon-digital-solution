@@ -235,7 +235,7 @@ const pricingPlans = [
 
 function HeroSection() {
   return (
-    <section className="relative isolate flex min-h-screen items-center overflow-hidden bg-neutral-950 text-white">
+    <section className="relative isolate min-h-[100svh] w-full overflow-hidden bg-neutral-950 text-white md:min-h-screen">
       <Navbar />
 
       <div className="absolute inset-0">
@@ -245,7 +245,7 @@ function HeroSection() {
 
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.035)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.035)_1px,transparent_1px)] bg-[size:70px_70px]" />
 
-      <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-7xl items-center px-5 pb-16 pt-28 lg:px-8">
+      <div className="relative z-20 mx-auto flex min-h-[100svh] w-full max-w-7xl items-center px-5 pb-16 pt-28 md:min-h-screen lg:px-8">
         <div className="max-w-4xl">
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-emerald-400">
             Alita Software House
