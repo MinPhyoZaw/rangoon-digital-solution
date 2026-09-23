@@ -236,8 +236,8 @@ export default function ContactPage() {
 
                   <div>
                     <p className="text-xs text-white/50">Phone</p>
-                    <p className="mt-1 text-sm">09 969 471 202</p>
-                    <p className="text-sm">09 798 245 930</p>
+                    <p className="mt-1 text-sm">+959 969 471 202</p>
+                    <p className="text-sm">+959 798 245 930</p>
                   </div>
                 </Link>
 
