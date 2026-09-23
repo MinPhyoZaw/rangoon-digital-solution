@@ -218,39 +218,39 @@ const technologyFoundation = [
 
 function HeroSection() {
   return (
-    <section className="relative isolate flex min-h-screen items-center overflow-hidden bg-neutral-950 text-white">
+    <section className="relative isolate min-h-[100svh] w-full overflow-hidden bg-neutral-950 text-white md:min-h-screen">
       <Navbar />
 
       {/* Banner image */}
-      <div className="absolute inset-0 -z-30">
+      <div className="absolute inset-0 h-full w-full">
         <Image
           src="/images/tsd.png"
           alt="Digital transformation technology banner"
           fill
           priority
           sizes="100vw"
-          className="object-cover object-[70%_center] sm:object-center"
+          className="object-cover object-center"
         />
       </div>
 
       {/* Dark overlay for text readability */}
-      <div className="absolute inset-0 -z-20 bg-gradient-to-r from-neutral-950/95 via-neutral-950/75 to-neutral-950/10" />
+      <div className="absolute inset-0 z-10 bg-gradient-to-r from-neutral-950/95 via-neutral-950/75 to-neutral-950/10" />
 
       {/* Additional top and bottom shading */}
-      <div className="absolute inset-0 -z-20 bg-gradient-to-b from-neutral-950/35 via-transparent to-neutral-950/75" />
+      <div className="absolute inset-0 z-10 bg-gradient-to-b from-neutral-950/35 via-transparent to-neutral-950/75" />
 
       {/* Background glow */}
-      <div className="absolute inset-0 -z-10">
+      <div className="absolute inset-0 z-10">
         <div className="absolute -left-32 top-1/4 h-[420px] w-[420px] rounded-full bg-blue-600/15 blur-[120px]" />
 
         <div className="absolute right-0 top-0 h-[520px] w-[520px] rounded-full bg-violet-600/10 blur-[140px]" />
       </div>
 
       {/* Subtle grid */}
-      <div className="absolute inset-0 -z-10 bg-[linear-gradient(rgba(255,255,255,0.025)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.025)_1px,transparent_1px)] bg-[size:72px_72px]" />
+      <div className="absolute inset-0 z-10 bg-[linear-gradient(rgba(255,255,255,0.025)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.025)_1px,transparent_1px)] bg-[size:72px_72px]" />
 
       {/* Hero content */}
-      <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-7xl items-center px-5 pb-16 pt-32 lg:px-8">
+      <div className="relative z-20 mx-auto flex min-h-[100svh] w-full max-w-7xl items-center px-5 pb-16 pt-32 md:min-h-screen lg:px-8">
         <div className="max-w-4xl">
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-400">
             Rangoon Digital Solution

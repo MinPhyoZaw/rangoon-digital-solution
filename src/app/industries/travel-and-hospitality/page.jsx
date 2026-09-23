@@ -114,16 +114,18 @@ export default function TravelAndHospitalityPage() {
       <Navbar />
 
       {/* Hero */}
-      <section className="relative isolate min-h-screen overflow-hidden bg-neutral-950">
+      <section className="relative isolate min-h-[100svh] w-full overflow-hidden bg-neutral-950 md:min-h-screen">
         {/* Background image */}
-        <Image
-          src="/images/handt.jpg"
-          alt="Luxury hotel and travel experience"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-center"
-        />
+        <div className="absolute inset-0 h-full w-full">
+          <Image
+            src="/images/handt.jpg"
+            alt="Luxury hotel and travel experience"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center"
+          />
+        </div>
 
         {/* Dark overlay */}
         <div className="absolute inset-0 z-10 bg-black/40" />
@@ -135,7 +137,7 @@ export default function TravelAndHospitalityPage() {
         <div className="absolute inset-x-0 bottom-0 z-10 h-48 bg-gradient-to-t from-neutral-950/70 to-transparent" />
 
         {/* Hero content */}
-        <div className="relative z-20 mx-auto flex min-h-screen max-w-7xl items-center px-5 pt-[88px] lg:px-8">
+        <div className="relative z-20 mx-auto flex min-h-[100svh] max-w-7xl items-center px-5 pt-[88px] md:min-h-screen lg:px-8">
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-white/70">
               Travel and Hospitality

@@ -745,25 +745,28 @@ export default function MobileAppDevelopmentPage() {
   return (
     <main className="bg-white">
       {/* Hero */}
-      <section className="relative isolate flex min-h-screen items-center overflow-hidden text-white">
+      <section className="relative isolate min-h-[100svh] w-full overflow-hidden bg-neutral-950 text-white md:min-h-screen">
         <Navbar />
 
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-          poster="/images/ygn-ancient.jpg"
-          src="/video/app-video.mp4"
-          aria-hidden="true"
-          className="absolute inset-0 z-0 h-full w-full object-cover"
-        />
+        <div className="absolute inset-0 h-full w-full">
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            poster="/images/ygn-ancient.jpg"
+            aria-hidden="true"
+            className="absolute inset-0 h-full w-full object-cover object-center"
+          >
+            <source src="/video/app-video.mp4" type="video/mp4" />
+          </video>
+        </div>
 
         <div className="absolute inset-0 z-10 bg-black/20" />
         <div className="absolute inset-0 z-10 bg-gradient-to-r from-black/80 via-black/40 to-transparent" />
 
-        <div className="relative z-20 mx-auto flex min-h-screen w-full max-w-7xl items-center px-5 pb-16 pt-28 lg:px-8">
+        <div className="relative z-20 mx-auto flex min-h-[100svh] w-full max-w-7xl items-center px-5 pb-16 pt-28 md:min-h-screen lg:px-8">
           <div className="max-w-3xl">
             <p className="mb-5 text-sm font-semibold uppercase tracking-[0.3em] text-white/65">
               Alita Software House
