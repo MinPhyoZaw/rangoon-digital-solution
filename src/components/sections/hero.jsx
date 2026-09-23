@@ -11,6 +11,7 @@ const slides = [
     id: 3,
     type: "video",
     src: "/video/ygn-road.mp4",
+    objectPosition: "center",
     title: "Software should",
     accent: "work for you.",
     description:
@@ -20,6 +21,7 @@ const slides = [
     id: 1,
     type: "image",
     src: "/images/ygn-ancient.jpg",
+    objectPosition: "center",
     eyebrow: "Alita Software House",
     description:
       "Websites, POS systems, e-commerce, business software, and custom digital solutions designed around real business needs.",
@@ -28,6 +30,7 @@ const slides = [
     id: 2,
     type: "image",
     src: "/images/ygn-girls.jpg",
+    objectPosition: "center",
     accent: "Forward Thinking.",
     description:
       "From a simple idea to a complete digital product, we design and build practical software for modern businesses.",
@@ -50,39 +53,69 @@ export function Hero() {
   const slide = slides[activeSlide];
 
   return (
-    <section className="relative isolate flex min-h-[82vh] items-center justify-center overflow-hidden bg-black">
+    <section className="relative isolate flex min-h-[100svh] items-center justify-center overflow-hidden bg-neutral-950 md:min-h-[82vh]">
       {/* =========================
           BACKGROUNDS
       ========================== */}
       {slides.map((item, index) => (
         <div
           key={item.id}
-          className={`absolute inset-0 transition-opacity duration-[1400ms] ${
+          className={`absolute inset-0 z-0 transition-opacity duration-[1400ms] ${
             activeSlide === index
               ? "opacity-100"
               : "pointer-events-none opacity-0"
           }`}
         >
           {item.type === "image" ? (
-            <Image
-              src={item.src}
-              alt=""
-              fill
-              priority={index === 1}
-              sizes="100vw"
-              className="object-cover object-center"
-            />
+            <div className="absolute inset-0 overflow-hidden bg-neutral-950">
+              <Image
+                src={item.src}
+                alt=""
+                fill
+                sizes="100vw"
+                style={{ objectPosition: item.objectPosition }}
+                className="scale-110 object-cover opacity-45 blur-xl md:hidden"
+              />
+
+              <Image
+                src={item.src}
+                alt=""
+                fill
+                priority={index === 0}
+                sizes="100vw"
+                style={{ objectPosition: item.objectPosition }}
+                className="object-contain md:object-cover"
+              />
+            </div>
           ) : (
-            <video
-              autoPlay
-              muted
-              loop
-              playsInline
-              preload="auto"
-              poster="/images/ygn-ancient.jpg"
-              src={item.src}
-              className="h-full w-full object-cover"
-            />
+            <div className="absolute inset-0 overflow-hidden bg-neutral-950">
+              <video
+                aria-hidden="true"
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="metadata"
+                poster="/images/ygn-ancient.jpg"
+                style={{ objectPosition: item.objectPosition }}
+                className="absolute inset-0 h-full w-full scale-110 object-cover opacity-45 blur-xl md:hidden"
+              >
+                <source src={item.src} type="video/mp4" />
+              </video>
+
+              <video
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="metadata"
+                poster="/images/ygn-ancient.jpg"
+                style={{ objectPosition: item.objectPosition }}
+                className="absolute inset-0 h-full w-full object-contain md:object-cover"
+              >
+                <source src={item.src} type="video/mp4" />
+              </video>
+            </div>
           )}
         </div>
       ))}
@@ -90,23 +123,23 @@ export function Hero() {
       {/* =========================
           MAIN DARK OVERLAY
       ========================== */}
-      <div className="absolute inset-0 bg-black/45" />
+      <div className="absolute inset-0 z-[1] bg-black/45" />
 
       {/* =========================
           CINEMATIC GRADIENT
       ========================== */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/65" />
+      <div className="absolute inset-0 z-[1] bg-gradient-to-b from-black/40 via-transparent to-black/65" />
 
       {/* =========================
           SLIGHT SIDE DARKNESS
       ========================== */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_10%,rgba(0,0,0,0.3)_100%)]" />
+      <div className="absolute inset-0 z-[1] bg-[radial-gradient(circle_at_center,transparent_10%,rgba(0,0,0,0.3)_100%)]" />
 
       {/* =========================
           HERO CONTENT
       ========================== */}
       <div
-        className={`relative z-10 mx-auto flex min-h-[82vh] w-full max-w-6xl items-center px-5 pb-16 pt-28 text-white lg:px-8 ${
+        className={`relative z-10 mx-auto flex min-h-[100svh] w-full max-w-6xl items-center px-5 pb-20 pt-28 text-white md:min-h-[82vh] md:pb-16 lg:px-8 ${
           activeSlide === 1 ? "justify-center lg:justify-end" : "justify-center"
         }`}
       >
@@ -212,7 +245,7 @@ export function Hero() {
       {/* =========================
           BOTTOM FADE
       ========================== */}
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/50 to-transparent" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[1] h-24 bg-gradient-to-t from-black/50 to-transparent" />
 
       {/* =========================
           ANIMATIONS + TEXT GLOW
